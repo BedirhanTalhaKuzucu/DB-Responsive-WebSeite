@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/input.css">
     <title>Deutche Bahn</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,14 +15,27 @@
         <div class="container">
             <div class="flex-container">
                 <div class="navbar-left">
-                    <h2><span style="color: #A9508B;">Clarusway</span> Web Design</h2>
+                    <div>
+                        <li> <a href=""> <img src="image/Db-netze.svg.png" class="image" alt=""></a></li>
+                        <li> <a href=""> Bodenseegürtelbahn</a> </li>
+                    </div>
                 </div>
                 <div class="navbar-right">
                     <ul>
-                        <li><a href="./index.html">Überblick</a></li>
+                        <li><a href="" id="dropDown"> Überblick  <i class="fa fa-angle-down" style="color:black;"> </i> </a> 
+                        </li>
+                        <div class="dropdown-content show" id="myDropdown">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
                         <li><a href="./about.html">Planung</a></li>
                         <li><a href="./services.html">Akteure</a></li>
-                        <li><a href="./services.html">Im Diaolog</a></li>
+                        <li><a href="" id="dropDownDioalog">Im Diaolog <i class="fa fa-angle-down" style="color:black;"></i> </a> </li>
+                        <div class="dropdown-content-Dialog show" id="myDropdown-Dialog">
+                            <a href="#">Link 4</a>
+                            <a href="#">Link 5</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -35,55 +49,54 @@
             </div>
             <div class="head-title">
                 <h1>Willkommen auf der Bodenseegürtelbahn</h1>
+                <button><i class="fa fa-play"></i></i> Projectvideo ansehen</button>
             </div>
         </div>
     </div>
 
-<!-- 
-    <div class="section">
-        <div class="container">
-            <div class="flex-container"> 
-                <div class="section-left">
-                    <h3>Subscribe To Our Newsletter</h3>
-                </div>
 
-                <div class="section-right">
-                    <input type="text" placeholder="Enter Email...">
-                    <input type="button" value="Subscribe" id="button">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="main">
         <div class="container">
-            <div class="flex-container">
-                <div class="main-content">
-                    <img src="img/logo_html.png" alt="html">
-                    <h3>HTML5 Markup</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quod cupiditate neque rerum, mollitia
-                harum!</p>
-                </div>
-                <div class="main-content">
-                    <img src="img/logo_css.png" alt="css">
-                    <h3>CSS3 Styling</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quod cupiditate neque rerum, mollitia
-                harum!</p>
-                </div>
-                <div class="main-content">
-                    <img src="img/logo_brush.png" alt="graphic design">
-                    <h3>Graphic Design</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quod cupiditate neque rerum, mollitia
-                harum!</p>
-                </div>
+            <div class="main-content">
+                <h2> Nach der Südbahn ist vor der Bodenseegürtelbahn </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quod cupiditate neque rerum,
+                    mollitia
+                    harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident et in id earum, eligendi
+                    nobis ullam sunt impedit reiciendis ipsa ex magnam sapiente dicta quae architecto natus iusto
+                    dolorum! Rem sed, eaque officiis alias hic amet soluta placeat consequuntur laboriosam fuga illum
+                    perspiciatis molestias non ipsa! Aliquam aliquid suscipit adipisci.
+
+                </p>
             </div>
+            <div class="margin-foot">
+                <div class="margin-foot-item">
+                    <h4>Strecke mit Seeblick</h4>
+                    <p>Navigieren Sie sich durch die interaktive Karte und erfahren Sie, welche Higlights und Maßnahmen
+                        wir an den einzelnen Orten planen und umsetzen.
+                    </p>
+                    <a href="">Zur interaktiven karte </a>
+                </div>
+                <div class="margin-foot-item">
+                    <h4> Diese Partner stecken hinter dem Project</h4>
+                    <p> Erfahren Sie, welche Akteure am Ausbau der Bodenseegürtelbahn beteiligt sind.
+                    </p>
+                    <a href=""> Zu den Akteuren</a>
+                </div>
+                <div class="margin-foot-item">
+                    <h4>So lauft die Planung ab</h4>
+                    <p>Finden Sie heraus, in welche Abschnitte sich die Planungsphase gliedert bevor mit dem Ausbau
+                        begonnen werden kann.
+                    </p>
+                    <a href=""> Zu Planung</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
-    <div class="footer">
-        <p>Clarusway Web Design, Copyright  © 2020</p>
-        <img src="img/clarusway_logo.png" alt="clarusway">
-    </div> -->
+    <script src="index.js"> </script>
 </body>
 
 </html>
