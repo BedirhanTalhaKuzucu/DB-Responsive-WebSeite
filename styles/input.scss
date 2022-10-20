@@ -82,6 +82,13 @@ body {
         display: flex;
         justify-content: start;
 
+        .bar {
+          width: 25px;
+          height: 3px;
+          background-color: black;
+          margin: 6px 0;
+        }
+
         div {
           margin-top: auto;
           margin-bottom: auto;
@@ -139,6 +146,26 @@ body {
       }
     }
   }
+}
+
+.arrowDown {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+.arrowRight {
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .head {

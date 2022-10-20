@@ -98,6 +98,13 @@ body {
           justify-content: start;
 }
 
+.navbar .container .flex-container .navbar-left .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 .navbar .container .flex-container .navbar-left div {
   margin-top: auto;
   margin-bottom: auto;
@@ -171,6 +178,24 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1rem;
+}
+
+.arrowDown {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrowRight {
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .head {
