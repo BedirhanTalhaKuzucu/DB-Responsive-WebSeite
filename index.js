@@ -3,7 +3,6 @@ let dropDownDialog = document.getElementById("dropDownDioalog");
 let videoButton = document.getElementById("videoButton");
 let menuIcon = document.getElementById("menuIcon");
 
-
 dropDown.addEventListener("click", (e) => {
   e.preventDefault();
   document.getElementById("myDropdown").classList.toggle("show");
@@ -19,14 +18,17 @@ videoButton.addEventListener("click", () => {
   document.querySelector(".head-container").classList.toggle("show");
 });
 
-menuIcon.addEventListener("click", (e)=> {
+menuIcon.addEventListener("click", (e) => {
   e.preventDefault();
-  if (document.querySelector(".navMenuButton").style.display === "none" ||document.querySelector(".navMenuButton").style.display === "") {
-    document.querySelector(".navMenuButton").style.display = "block"
-  }else{
-    document.querySelector(".navMenuButton").style.display = "none"
+  if (
+    document.querySelector(".navMenuButton").style.display === "none" ||
+    document.querySelector(".navMenuButton").style.display === ""
+  ) {
+    document.querySelector(".navMenuButton").style.display = "block";
+  } else {
+    document.querySelector(".navMenuButton").style.display = "none";
   }
-})
+});
 
 window.onclick = function (e) {
   let myDropdown = document.getElementById("myDropdown");
