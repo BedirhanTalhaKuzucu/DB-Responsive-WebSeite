@@ -12,20 +12,15 @@ dropDown.addEventListener("click", (e) => {
 dropDownDialog.addEventListener("click", (e) => {
   e.preventDefault();
   document.getElementById("myDropdown-Dialog").classList.toggle("show");
-  console.log(document.getElementById("myDropdown-Dialog").classList)
 });
 
 videoButton.addEventListener("click", () => {
-//   console.log(document.querySelector(".head-video"));
-//   console.log(document.querySelector(".head-container"));
   document.querySelector(".head-video").classList.toggle("show");
   document.querySelector(".head-container").classList.toggle("show");
-
 });
 
 menuIcon.addEventListener("click", (e)=> {
   e.preventDefault();
-  console.log(document.querySelector(".navMenuButton").style.display);
   if (document.querySelector(".navMenuButton").style.display === "none" ||document.querySelector(".navMenuButton").style.display === "") {
     document.querySelector(".navMenuButton").style.display = "block"
   }else{
